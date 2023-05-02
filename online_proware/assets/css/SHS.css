@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+:root{
+    --primary-color: #fff422;
+    --secondary-color: #08346c;
+    --gray-color: #5c5c5c ;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    height: 100vh;
+}
+
+.section-pad1{
+    padding: 40px 80px;
+}
+
+/* ============= navigation bar ============= */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+#header a{
+    margin-left: 3%;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+#header a:hover{
+    color: white;
+}
+
+#header img{
+    width: 100px;
+    padding-left: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    position: relative;
+    list-style: none;
+    padding-right: 50px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a:active{
+    color: white;
+}
+
+/* ============= SHS TITLE ============= */
+.u-title h3{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* ============= SENIOR HIGH MALE SECTION ============= */
+#u-selection{
+    margin:3% 15%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    align-items: center;
+}
+
+#u-selection .selection img{
+    width: 100%;
+}
+
+#u-selection .selection{
+    width: 250px;
+    text-align: center;
+    padding: 25px 15px; 
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin: 15px 0;
+    position: relative;   
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+#u-selection .selection:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid var(--secondary-color);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* ============= SENIOR HIGH PRODUCT SECTION ============= */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .big-img{
+    width: 30%;
+    margin-right: 50px;
+}
+
+.small-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .text-details{
+    width: 50%;
+    padding-top: 20px
+}
+
+#prodetails .text-details h1{
+    font-size: 15px;
+}
+
+#prodetails .text-details h2{
+    font-size: 40px;
+}
+
+#prodetails .text-details h3{
+    font-size: 30px;
+}
+
+#prodetails .text-details h4{
+    padding-top: 10px;
+}
+
+#prodetails .text-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+#prodetails .counter{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+
+#prodetails .counter input{
+    text-align: center;
+    width: 50px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+#prodetails .counter span{
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+#prodetails .text-details button{
+    border-style: solid;
+    border-radius: 5px;
+    padding: 15px 15px;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#prodetails .text-details button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
